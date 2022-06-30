@@ -15,12 +15,56 @@
 
   <body>
     <header class="main-header">
+      <div class ="main-header">
+      <ul class = "opmenu">
+      <button aria-label="open menu"
+        class="menu-icon menu-icon--burger svelte-s0rbtj">
+        <svg width="33" 
+        height="28" 
+        viewBox="0 0 33 28" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 1.86035H31" 
+        stroke="currentColor" 
+        stroke-width="2.69767" 
+        stroke-linecap="round">
+      </path>
+        <path d="M2 14H31" 
+        stroke="currentColor" 
+        stroke-width="2.69767" 
+        stroke-linecap="round">
+      </path>
+        <path d="M2 26.1396H31" 
+        stroke="currentColor" 
+        stroke-width="2.69767" 
+        stroke-linecap="round">
+      </path>
+      </svg>
+    </button>
+    </ul>
+  </div>
+  <nav id="nav">
+    <div class="navTop">
+        <div class="navItem">
+            <img src="https://raw.githubusercontent.com/safak/youtube/html-css-js-ecommerce/img/sneakers.png" alt="">
+        </div>
+        <div class="navItem">
+            <div class="search">
+                <input type="text" placeholder="Search..." class="searchInput">
+                <img src="https://raw.githubusercontent.com/safak/youtube/html-css-js-ecommerce/img/search.png" width="20" height="20" alt="" class="searchIcon">
+            </div>
+        </div>
+        <div class="navItem">
+            <span class="limitedOffer">Limited Offer!</span>
+        </div>
+    </div>
+</nav>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
             <ul class="menu-1">
-              <li><a href="javascript:;">Home</a></li>
-              <li><a href="javascript:;">About</a></li>
+              <li><a class="javasc:;">Home</a></li>
+              <li><a href="col-md-6;">About</a></li>
               <li><a href="javascript:;">Gallery</a></li>
               <li><a href="javascript:;">Offers</a></li>
             </ul>
@@ -36,7 +80,7 @@
           </div>
           <div class="col-md-4">
             <ul class="menu-2">
-              <li><a href="javascript:;">Gallery</a></li>
+              <li><a href="javasc;">Gallery</a></li>
               <li><a href="javascript:;">Contact</a></li>
               <li><a href="javascript:;">Blog</a></li>
             </ul>
@@ -65,6 +109,28 @@
                 labore et dolore magna.</p>
                 <div class="banner-btn">
                     <a href="javscript:;">Contact us</a>
+
+                    <!--Button to close the form-->
+                    <label for="click" id="times">x</label>
+                    <div class="form">
+                    <!--Place to input the name-->
+                        <div class="input_field">
+                          <input type="text" placeholder="Name">
+                      </div>
+                          <!--Place to input the email-->
+                        <div class="input_field">
+                          <input type="text" placeholder="Email">
+                      </div>
+                        <!--Place to input the message-->
+                        <div class="input_field">
+                          <textarea placeholder="Message"></textarea>
+                      </div>
+                      <!--Submit button-->
+                      <div class="btn">
+                      <a href="#">Send</a>
+                    </div>
+
+                    </div>
                 </div>
             </div>
           </div>
@@ -197,7 +263,7 @@
       <div class="col-md-4">
         <div class="group-6-items">
           <img src="./assets/images/group-6/img-1.png" alt="">
-          <h2>ITALIAN SOURCE MUSHROOM</h2>
+          <h2>ITALIAN LEMON TEA</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
           <h3>Price: $12.00</h3>
       </div>
@@ -205,7 +271,7 @@
       <div class="col-md-4">
         <div class="group-6-items">
           <img src="./assets/images/group-6/img-2.png" alt="">
-          <h2>ITALIAN SOURCE MUSHROOM</h2>
+          <h2>ITALIAN BREAKFAST</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
           <h3>Price: $12.00</h3>
       </div>
@@ -213,7 +279,7 @@
       <div class="col-md-4">
         <div class="group-6-items">
           <img src="./assets/images/group-6/img-3.png" alt="">
-          <h2>ITALIAN SOURCE MUSHROOM</h2>
+          <h2>ITALIAN BREAD SNADWICH</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
           <h3>Price: $12.00</h3>
       </div>
@@ -259,12 +325,45 @@
                       <li><a href="javascript:;">Contact</a></li>
                       <li><a href="javascript:;">Location</a></li>
                   </ul>
-                  <div class="social-icons">
-                      <i class="fa-brands fa-facebook"></i>
-                      <i class="fa-brands fa-twitter"></i>
-                      <i class="fa-brands fa-instagram"></i>
-                      <i class="fa-brands fa-pinterest-p pin-1"></i>
-                  </div>
+                  <div class="wrapper">
+                    <div class="icon facebook">
+                      
+                      <div class="tooltip">
+                          Facebook
+                      </div>
+                      <span><i class="fab fa-facebook-f"></i></span>
+                    
+                      <a href="https://www.facebook.com/sahqib.akhtar">Facebook </a>
+                    
+                    </div>
+                    <div class="icon twitter">
+                      <div class="tooltip">
+                          Twitter
+                      </div>
+                      <span><i class="fab fa-twitter"></i></span>
+                      <a href="https://mobile.twitter.com/SahqibAkhtar">Twitter </a>
+                    </div>
+                    <div class="icon instagram">
+                      <div class="tooltip">
+                          Instagram
+                      </div>
+                      <span><i class="fab fa-instagram"></i></span>
+                      <a href="https://instagram.com/sahqibakhtar?igshid=YmMyMTA2M2Y=">Instagram </a>
+                    </div>
+                    <div class="icon github">
+                      <div class="tooltip">
+                          Github
+                      </div>
+                      <span><i class="fab fa-github"></i></span>
+                      <a href="https://github.com/SahqibAkhtar">Github </a>
+                    </div>
+                    <div class="icon youtube">
+                      <div class="tooltip">
+                          YouTube
+                      </div>
+                      <span><i class="fab fa-youtube"></i></span>
+                      <a href="https://www.youtube.com/channel/UCsYI1tKSFSHKBz_xLKGyzfg/featured">YouTube </a>
+                    </div>
               </div>
           </div>
       </div>
